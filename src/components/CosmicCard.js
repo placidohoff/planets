@@ -43,7 +43,7 @@ export default function CosmicCard(props) {
     return (
         <Collapse in={props.checked} {... (true ? { timeout: 500 } : {})}>
 
-            <Card className={`${classes.root}`} onClick={e => history.push(`/planets/${props.id}`)}>
+            <Card className={`${classes.root}`} onClick={e => history.push(`/planets/${props.name}`)}>
                 <CardMedia
                     component="img"
                     height="240"
